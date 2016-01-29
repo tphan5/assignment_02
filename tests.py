@@ -156,10 +156,10 @@ class TestAssignmentTwo_Strings(unittest.TestCase):
         s = '{}'
 
         # Check to see what the heck 's' is
-        self.assertEqual(____, isinstance(s, string))
+        self.assertEqual(____, isinstance(s, str))
 
         rounded_pi = _________
-        self.assertEqual(rounded_pi, s.format(pi, 4))
+        self.assertEqual(rounded_pi, s.format(round(pi, 4)))
 
     def test_translation(self):
         """
@@ -175,9 +175,9 @@ class TestAssignmentTwo_Strings(unittest.TestCase):
 
         leet = str.maketrans('abegiloprstz', '463611092572')
         s = 'The quick brown fox jumped over the lazy dog.'
-        s.translate(leet)
-
-        truth = ____
+        s.translate(leet)  # Translate the string here
+        
+        truth = ____  # Truth is the newly translated string 
 
         self.assertEqual(truth, s)
 
